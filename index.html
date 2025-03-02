@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Profile Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-header">
+        <h1 class="app-title">
+            <img src="BGI circle.jpg" alt="BGI Logo">
+            Skill Taxonomy App
+        </h1>
+    </div>
+    
+    <main>
+        <div id="error-message" class="error-message"></div>
+        
+        <div class="controls">
+            <select id="occupation" class="select-input">
+                <option value="">Choose an occupation...</option>
+            </select>
+        </div>
+        
+        <div class="content">
+            <div id="skills-categories" class="skills-categories"></div>
+            <div id="skill-details" class="skill-details">
+                <div class="skill-content hidden">
+                    <div id="selected-skill"></div>
+                    <div id="market-trends"></div>
+                    <div id="skill-description"></div>
+                    <div id="proficiency-levels"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,807 @@
+{
+    "occupations": [
+        {
+            "id": "software-developer",
+            "title": "Software Developer",
+            "skillCategories": [
+                {
+                    "name": "Technical Skills",
+                    "skills": [
+                        {
+                            "id": "programming",
+                            "name": "Programming",
+                            "shortDescription": "Core programming concepts and practices",
+                            "description": "Understanding of programming fundamentals, algorithms, data structures, and software design patterns.",
+                            "marketTrends": "Programming skills remain in high demand, with particular emphasis on full-stack development capabilities and cloud-native application development.",
+                            "proficiencyLevels": [
+                                {
+                                    "name": "Basic",
+                                    "description": "Can write simple programs and understand basic programming concepts"
+                                },
+                                {
+                                    "name": "Intermediate",
+                                    "description": "Can develop moderately complex applications and understand advanced programming concepts"
+                                },
+                                {
+                                    "name": "Advanced",
+                                    "description": "Can architect complex systems and mentor others in programming best practices"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "customer-service-manager",
+            "title": "Customer Service Manager",
+            "skillCategories": [
+                {
+                    "name": "Leadership Skills",
+                    "skills": [
+                        {
+                            "id": "team-leadership",
+                            "name": "Team Leadership",
+                            "shortDescription": "Leading and managing customer service teams",
+                            "description": "Ability to lead, motivate, and develop customer service teams to achieve high performance and customer satisfaction goals.",
+                            "marketTrends": "Leadership skills in customer service are increasingly important as organizations focus on delivering exceptional customer experiences. Growth rate of 18.3% indicates strong demand.",
+                            "proficiencyLevels": [
+                                {
+                                    "name": "Level 1",
+                                    "description": "Can supervise small teams and handle basic team management tasks"
+                                },
+                                {
+                                    "name": "Level 2",
+                                    "description": "Can effectively manage larger teams, develop team strategies, and handle complex team dynamics"
+                                },
+                                {
+                                    "name": "Level 3",
+                                    "description": "Can lead multiple teams, implement organizational changes, and develop future leaders"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "coaching",
+                            "name": "Coaching",
+                            "shortDescription": "Developing team members through coaching",
+                            "description": "Ability to provide effective coaching and mentoring to team members to improve their skills and performance.",
+                            "marketTrends": "While showing a slight decline (-0.5%), coaching remains a critical skill for customer service managers with a wage premium of 6.2%.",
+                            "proficiencyLevels": [
+                                {
+                                    "name": "Level 1",
+                                    "description": "Can provide basic feedback and guidance to team members"
+                                },
+                                {
+                                    "name": "Level 2",
+                                    "description": "Can develop and implement coaching plans for individual team members"
+                                },
+                                {
+                                    "name": "Level 3",
+                                    "description": "Can create and manage comprehensive coaching programs for multiple teams"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "performance-management",
+                            "name": "Performance Management",
+                            "shortDescription": "Managing team and individual performance",
+                            "description": "Ability to set performance goals, monitor progress, provide feedback, and implement improvement strategies for team members.",
+                            "marketTrends": "Performance management skills show steady growth with increasing emphasis on data-driven approaches and continuous feedback.",
+                            "proficiencyLevels": [
+                                {
+                                    "name": "Level 1",
+                                    "description": "Can conduct basic performance reviews and set simple goals"
+                                },
+                                {
+                                    "name": "Level 2",
+                                    "description": "Can develop comprehensive performance plans and handle complex performance issues"
+                                },
+                                {
+                                    "name": "Level 3",
+                                    "description": "Can design and implement performance management systems and mentor other managers"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Customer Service Skills",
+                    "skills": [
+                        {
+                            "id": "customer-relationship-management",
+                            "name": "Customer Relationship Management",
+                            "shortDescription": "Managing customer relationships and satisfaction",
+                            "description": "Expertise in managing customer relationships, handling escalations, and ensuring high levels of customer satisfaction.",
+                            "marketTrends": "Despite a decline in growth rate (-13.5%), CRM skills command a significant wage premium of 15.4%, indicating their continued importance.",
+                            "proficiencyLevels": [
+                                {
+                                    "name": "Level 1",
+                                    "description": "Can handle basic customer relationships and common issues"
+                                },
+                                {
+                                    "name": "Level 2",
+                                    "description": "Can manage complex customer relationships and develop retention strategies"
+                                },
+                                {
+                                    "name": "Level 3",
+                                    "description": "Can implement strategic CRM initiatives and handle key accounts"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "communication",
+                            "name": "Communication",
+                            "shortDescription": "Effective communication with customers and team",
+                            "description": "Strong verbal and written communication skills for interacting with customers, team members, and stakeholders.",
+                            "marketTrends": "Communication skills show steady growth (3.6%) with a significant wage premium of 13.5%, reflecting their essential role in customer service management.",
+                            "proficiencyLevels": [
+                                {
+                                    "name": "Level 1",
+                                    "description": "Can communicate effectively in routine situations"
+                                },
+                                {
+                                    "name": "Level 2",
+                                    "description": "Can handle complex communications and conflict resolution"
+                                },
+                                {
+                                    "name": "Level 3",
+                                    "description": "Can develop communication strategies and train others"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "customer-service",
+                            "name": "Customer Service",
+                            "shortDescription": "Delivering exceptional customer service",
+                            "description": "Comprehensive understanding of customer service principles and practices, including problem resolution, service quality, and customer experience management.",
+                            "marketTrends": "Customer service skills remain essential with a growth rate of 1.6% and consistent demand across industries.",
+                            "proficiencyLevels": [
+                                {
+                                    "name": "Level 1",
+                                    "description": "Can handle routine customer service tasks and basic problem resolution"
+                                },
+                                {
+                                    "name": "Level 2",
+                                    "description": "Can manage complex service issues and implement service improvements"
+                                },
+                                {
+                                    "name": "Level 3",
+                                    "description": "Can develop customer service strategies and lead service excellence initiatives"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Technical Skills",
+                    "skills": [
+                        {
+                            "id": "cash-handling",
+                            "name": "Cash Handling",
+                            "shortDescription": "Managing financial transactions and records",
+                            "description": "Ability to oversee financial transactions, maintain accurate records, and ensure compliance with cash handling procedures.",
+                            "marketTrends": "Cash handling skills show strong growth (67.2%) with a moderate wage premium of 4.3%, indicating continued importance in customer service operations.",
+                            "proficiencyLevels": [
+                                {
+                                    "name": "Level 1",
+                                    "description": "Can handle basic financial transactions and record-keeping"
+                                },
+                                {
+                                    "name": "Level 2",
+                                    "description": "Can manage complex financial operations and train others"
+                                },
+                                {
+                                    "name": "Level 3",
+                                    "description": "Can develop and implement financial procedures and controls"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "data-analysis",
+                            "name": "Data Analysis",
+                            "shortDescription": "Analyzing customer service metrics and data",
+                            "description": "Ability to analyze customer service data, metrics, and KPIs to identify trends, opportunities, and areas for improvement.",
+                            "marketTrends": "Data analysis skills are increasingly important with a growing focus on data-driven decision making in customer service management.",
+                            "proficiencyLevels": [
+                                {
+                                    "name": "Level 1",
+                                    "description": "Can interpret basic service metrics and generate simple reports"
+                                },
+                                {
+                                    "name": "Level 2",
+                                    "description": "Can perform detailed analysis and make data-driven recommendations"
+                                },
+                                {
+                                    "name": "Level 3",
+                                    "description": "Can develop advanced analytics strategies and predictive models"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Business Skills",
+                    "skills": [
+                        {
+                            "id": "operations-management",
+                            "name": "Operations Management",
+                            "shortDescription": "Managing customer service operations",
+                            "description": "Ability to manage day-to-day customer service operations, including scheduling, resource allocation, and process improvement.",
+                            "marketTrends": "Operations management skills show steady demand with increasing focus on efficiency and automation.",
+                            "proficiencyLevels": [
+                                {
+                                    "name": "Level 1",
+                                    "description": "Can manage basic operations and follow established procedures"
+                                },
+                                {
+                                    "name": "Level 2",
+                                    "description": "Can optimize operations and implement process improvements"
+                                },
+                                {
+                                    "name": "Level 3",
+                                    "description": "Can develop strategic operational plans and lead major initiatives"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "budget-management",
+                            "name": "Budget Management",
+                            "shortDescription": "Managing department budgets and resources",
+                            "description": "Ability to develop and manage budgets, track expenses, and ensure efficient use of resources.",
+                            "marketTrends": "Budget management skills remain critical with increased focus on cost optimization and resource efficiency.",
+                            "proficiencyLevels": [
+                                {
+                                    "name": "Level 1",
+                                    "description": "Can track basic expenses and follow budget guidelines"
+                                },
+                                {
+                                    "name": "Level 2",
+                                    "description": "Can develop departmental budgets and manage resource allocation"
+                                },
+                                {
+                                    "name": "Level 3",
+                                    "description": "Can create strategic financial plans and optimize resource utilization"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "customer-service-representative",
+            "title": "Customer Service Representative",
+            "skillCategories": [
+                {
+                    "name": "Core Skills",
+                    "skills": [
+                        {
+                            "id": "customer-service-csr",
+                            "name": "Customer Service",
+                            "shortDescription": "Providing excellent customer service",
+                            "description": "Ability to assist customers with inquiries, resolve issues, and ensure customer satisfaction through professional and efficient service.",
+                            "marketTrends": "Customer service skills remain fundamental with consistent demand across industries. Growth rate of 7.8% indicates strong continued need.",
+                            "proficiencyLevels": [
+                                {
+                                    "name": "Level 1",
+                                    "description": "Can handle basic customer inquiries and follow service procedures"
+                                },
+                                {
+                                    "name": "Level 2",
+                                    "description": "Can resolve complex issues and provide personalized service"
+                                },
+                                {
+                                    "name": "Level 3",
+                                    "description": "Can handle escalations and train others in service excellence"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "communication-csr",
+                            "name": "Communication",
+                            "shortDescription": "Clear and effective communication",
+                            "description": "Strong verbal and written communication skills for interacting with customers through various channels.",
+                            "marketTrends": "Communication skills show steady growth (4.7%) with emphasis on multi-channel communication abilities.",
+                            "proficiencyLevels": [
+                                {
+                                    "name": "Level 1",
+                                    "description": "Can communicate clearly in routine situations"
+                                },
+                                {
+                                    "name": "Level 2",
+                                    "description": "Can handle difficult conversations and write professional correspondence"
+                                },
+                                {
+                                    "name": "Level 3",
+                                    "description": "Can communicate effectively in any situation and mentor others"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Technical Skills",
+                    "skills": [
+                        {
+                            "id": "call-center-experience",
+                            "name": "Call Center Experience",
+                            "shortDescription": "Managing customer calls effectively",
+                            "description": "Experience in handling high volumes of calls while maintaining quality service and meeting performance metrics.",
+                            "marketTrends": "While showing a decline in growth rate (-10.8%), call center skills maintain a wage premium of 2.4% due to continued demand.",
+                            "proficiencyLevels": [
+                                {
+                                    "name": "Level 1",
+                                    "description": "Can handle basic calls following scripts and procedures"
+                                },
+                                {
+                                    "name": "Level 2",
+                                    "description": "Can manage complex calls and maintain high performance metrics"
+                                },
+                                {
+                                    "name": "Level 3",
+                                    "description": "Can handle any call situation and train others in best practices"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "data-entry",
+                            "name": "Data Entry",
+                            "shortDescription": "Accurate data entry and record keeping",
+                            "description": "Ability to input and maintain accurate customer and transaction records in various systems.",
+                            "marketTrends": "Data entry skills show declining growth (-14.3%) but maintain relevance with a wage premium of 2.0%.",
+                            "proficiencyLevels": [
+                                {
+                                    "name": "Level 1",
+                                    "description": "Can perform basic data entry tasks accurately"
+                                },
+                                {
+                                    "name": "Level 2",
+                                    "description": "Can handle complex data entry and maintain high accuracy"
+                                },
+                                {
+                                    "name": "Level 3",
+                                    "description": "Can manage large volumes of data and train others"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Problem-Solving Skills",
+                    "skills": [
+                        {
+                            "id": "customer-inquiries",
+                            "name": "Customer Inquiries",
+                            "shortDescription": "Handling customer questions and issues",
+                            "description": "Ability to effectively address and resolve customer questions, concerns, and complaints.",
+                            "marketTrends": "Despite negative growth (-33.8%), inquiry handling skills maintain importance with a wage premium of 3.8%.",
+                            "proficiencyLevels": [
+                                {
+                                    "name": "Level 1",
+                                    "description": "Can handle common inquiries and follow resolution procedures"
+                                },
+                                {
+                                    "name": "Level 2",
+                                    "description": "Can resolve complex inquiries and identify root causes"
+                                },
+                                {
+                                    "name": "Level 3",
+                                    "description": "Can handle any inquiry and develop resolution strategies"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "problem-resolution",
+                            "name": "Problem Resolution",
+                            "shortDescription": "Resolving customer problems effectively",
+                            "description": "Ability to identify, analyze, and resolve customer problems efficiently while maintaining customer satisfaction.",
+                            "marketTrends": "Problem resolution skills remain essential with growing emphasis on first-contact resolution.",
+                            "proficiencyLevels": [
+                                {
+                                    "name": "Level 1",
+                                    "description": "Can resolve basic problems following guidelines"
+                                },
+                                {
+                                    "name": "Level 2",
+                                    "description": "Can solve complex problems and prevent recurrence"
+                                },
+                                {
+                                    "name": "Level 3",
+                                    "description": "Can handle any problem and develop resolution processes"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "financial-analyst",
+            "title": "Financial Analyst",
+            "skillCategories": [
+                {
+                    "name": "Analysis Skills",
+                    "skills": [
+                        {
+                            "id": "financial-analysis",
+                            "name": "Financial Analysis",
+                            "shortDescription": "Analyzing financial data and trends",
+                            "description": "Ability to analyze financial statements, market trends, and economic indicators to provide insights and recommendations.",
+                            "marketTrends": "Financial analysis skills remain highly valued with strong growth prospects and significant wage premiums.",
+                            "proficiencyLevels": [
+                                {
+                                    "name": "Level 1",
+                                    "description": "Can perform basic financial analysis and create standard reports"
+                                },
+                                {
+                                    "name": "Level 2",
+                                    "description": "Can conduct complex analysis and provide detailed recommendations"
+                                },
+                                {
+                                    "name": "Level 3",
+                                    "description": "Can lead strategic financial analysis and develop analytical frameworks"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ad-hoc-analysis",
+                            "name": "Ad Hoc Analysis",
+                            "shortDescription": "Performing specialized financial analysis",
+                            "description": "Ability to conduct specialized financial analysis projects and respond to specific analytical requests.",
+                            "marketTrends": "Ad hoc analysis skills show strong growth (8.4%) with increasing demand for customized financial insights.",
+                            "proficiencyLevels": [
+                                {
+                                    "name": "Level 1",
+                                    "description": "Can perform basic ad hoc analysis following templates"
+                                },
+                                {
+                                    "name": "Level 2",
+                                    "description": "Can design and conduct complex ad hoc analysis"
+                                },
+                                {
+                                    "name": "Level 3",
+                                    "description": "Can lead strategic analysis projects and develop methodologies"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Technical Skills",
+                    "skills": [
+                        {
+                            "id": "financial-modeling",
+                            "name": "Financial Modeling",
+                            "shortDescription": "Building financial models and forecasts",
+                            "description": "Ability to create and maintain financial models for forecasting, valuation, and decision support.",
+                            "marketTrends": "Financial modeling skills show consistent demand with emphasis on advanced modeling techniques.",
+                            "proficiencyLevels": [
+                                {
+                                    "name": "Level 1",
+                                    "description": "Can build basic financial models using templates"
+                                },
+                                {
+                                    "name": "Level 2",
+                                    "description": "Can create complex models and perform sensitivity analysis"
+                                },
+                                {
+                                    "name": "Level 3",
+                                    "description": "Can develop advanced models and train others in modeling"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "financial-data",
+                            "name": "Financial Data",
+                            "shortDescription": "Managing and analyzing financial data",
+                            "description": "Expertise in working with financial data, including collection, validation, and analysis using various tools and systems.",
+                            "marketTrends": "Financial data skills show strong growth (17.8%) with increasing focus on data-driven decision making.",
+                            "proficiencyLevels": [
+                                {
+                                    "name": "Level 1",
+                                    "description": "Can handle basic financial data and use standard tools"
+                                },
+                                {
+                                    "name": "Level 2",
+                                    "description": "Can manage complex data sets and use advanced analytics"
+                                },
+                                {
+                                    "name": "Level 3",
+                                    "description": "Can lead data initiatives and implement best practices"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Business Skills",
+                    "skills": [
+                        {
+                            "id": "budgeting",
+                            "name": "Budgeting",
+                            "shortDescription": "Developing and managing budgets",
+                            "description": "Ability to create, analyze, and manage budgets, including forecasting and variance analysis.",
+                            "marketTrends": "Budgeting skills maintain strong growth (7.1%) with continued importance in financial planning.",
+                            "proficiencyLevels": [
+                                {
+                                    "name": "Level 1",
+                                    "description": "Can assist with budget preparation and tracking"
+                                },
+                                {
+                                    "name": "Level 2",
+                                    "description": "Can develop comprehensive budgets and manage variances"
+                                },
+                                {
+                                    "name": "Level 3",
+                                    "description": "Can lead strategic budgeting and develop processes"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "analytical-skills",
+                            "name": "Analytical Skills",
+                            "shortDescription": "General analytical and problem-solving",
+                            "description": "Strong analytical thinking and problem-solving abilities applied to financial and business challenges.",
+                            "marketTrends": "Despite slight decline (-2.5%), analytical skills remain fundamental with high demand across industries.",
+                            "proficiencyLevels": [
+                                {
+                                    "name": "Level 1",
+                                    "description": "Can analyze basic problems and follow analytical processes"
+                                },
+                                {
+                                    "name": "Level 2",
+                                    "description": "Can solve complex problems and develop analytical approaches"
+                                },
+                                {
+                                    "name": "Level 3",
+                                    "description": "Can lead analytical projects and mentor others"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Communication Skills",
+                    "skills": [
+                        {
+                            "id": "financial-reporting",
+                            "name": "Financial Reporting",
+                            "shortDescription": "Creating and presenting financial reports",
+                            "description": "Ability to prepare and present financial reports, including analysis and recommendations for stakeholders.",
+                            "marketTrends": "Financial reporting skills maintain steady demand with emphasis on clear communication of complex information.",
+                            "proficiencyLevels": [
+                                {
+                                    "name": "Level 1",
+                                    "description": "Can prepare basic financial reports and presentations"
+                                },
+                                {
+                                    "name": "Level 2",
+                                    "description": "Can create comprehensive reports and deliver effective presentations"
+                                },
+                                {
+                                    "name": "Level 3",
+                                    "description": "Can develop reporting strategies and lead financial communications"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "stakeholder-communication",
+                            "name": "Stakeholder Communication",
+                            "shortDescription": "Communicating with stakeholders",
+                            "description": "Ability to effectively communicate financial information and recommendations to various stakeholders.",
+                            "marketTrends": "Stakeholder communication skills show increasing importance with focus on transparency and clarity.",
+                            "proficiencyLevels": [
+                                {
+                                    "name": "Level 1",
+                                    "description": "Can communicate basic financial information to stakeholders"
+                                },
+                                {
+                                    "name": "Level 2",
+                                    "description": "Can handle complex stakeholder communications and presentations"
+                                },
+                                {
+                                    "name": "Level 3",
+                                    "description": "Can lead stakeholder engagement and develop communication strategies"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "retail-sales-supervisor",
+            "title": "First-Line Supervisor of Retail Sales Workers",
+            "skillCategories": [
+                {
+                    "name": "Leadership Skills",
+                    "skills": [
+                        {
+                            "id": "team-supervision",
+                            "name": "Team Supervision",
+                            "shortDescription": "Supervising retail sales staff",
+                            "description": "Ability to effectively supervise, motivate, and develop retail sales staff to achieve performance goals.",
+                            "marketTrends": "Supervisory skills in retail remain essential with growing emphasis on team development and performance management.",
+                            "proficiencyLevels": [
+                                {
+                                    "name": "Level 1",
+                                    "description": "Can supervise small teams and handle basic management tasks"
+                                },
+                                {
+                                    "name": "Level 2",
+                                    "description": "Can manage larger teams and develop performance strategies"
+                                },
+                                {
+                                    "name": "Level 3",
+                                    "description": "Can lead multiple teams and implement organizational changes"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "accountability",
+                            "name": "Accountability",
+                            "shortDescription": "Maintaining team accountability",
+                            "description": "Ability to establish and maintain accountability standards, track performance, and ensure compliance with policies.",
+                            "marketTrends": "Accountability skills show steady growth with increasing focus on performance metrics and standards.",
+                            "proficiencyLevels": [
+                                {
+                                    "name": "Level 1",
+                                    "description": "Can monitor basic performance metrics and follow up on issues"
+                                },
+                                {
+                                    "name": "Level 2",
+                                    "description": "Can develop accountability systems and handle complex issues"
+                                },
+                                {
+                                    "name": "Level 3",
+                                    "description": "Can implement comprehensive accountability programs"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Operational Skills",
+                    "skills": [
+                        {
+                            "id": "inventory-management",
+                            "name": "Inventory Management",
+                            "shortDescription": "Managing retail inventory",
+                            "description": "Expertise in managing inventory levels, conducting counts, and maintaining accurate stock records.",
+                            "marketTrends": "Inventory management skills maintain importance with focus on efficiency and accuracy.",
+                            "proficiencyLevels": [
+                                {
+                                    "name": "Level 1",
+                                    "description": "Can perform basic inventory tasks and maintain records"
+                                },
+                                {
+                                    "name": "Level 2",
+                                    "description": "Can manage complex inventory systems and optimize stock levels"
+                                },
+                                {
+                                    "name": "Level 3",
+                                    "description": "Can develop inventory strategies and implement best practices"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "cash-handling-retail",
+                            "name": "Cash Handling",
+                            "shortDescription": "Managing financial transactions",
+                            "description": "Ability to manage cash transactions, maintain accurate records, and ensure security of funds.",
+                            "marketTrends": "Cash handling skills remain important in retail with emphasis on accuracy and security.",
+                            "proficiencyLevels": [
+                                {
+                                    "name": "Level 1",
+                                    "description": "Can handle basic cash transactions and balancing"
+                                },
+                                {
+                                    "name": "Level 2",
+                                    "description": "Can manage complex transactions and train others"
+                                },
+                                {
+                                    "name": "Level 3",
+                                    "description": "Can develop cash handling procedures and controls"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Customer Service Skills",
+                    "skills": [
+                        {
+                            "id": "customer-service-retail",
+                            "name": "Customer Service",
+                            "shortDescription": "Ensuring customer satisfaction",
+                            "description": "Ability to ensure high levels of customer service through team leadership and personal example.",
+                            "marketTrends": "Customer service skills in retail show consistent demand with focus on experience enhancement.",
+                            "proficiencyLevels": [
+                                {
+                                    "name": "Level 1",
+                                    "description": "Can maintain basic service standards and handle issues"
+                                },
+                                {
+                                    "name": "Level 2",
+                                    "description": "Can improve service quality and develop team skills"
+                                },
+                                {
+                                    "name": "Level 3",
+                                    "description": "Can implement service excellence programs"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "communication-retail",
+                            "name": "Communication",
+                            "shortDescription": "Effective team communication",
+                            "description": "Strong communication skills for interacting with team members, customers, and management.",
+                            "marketTrends": "Communication skills remain fundamental in retail supervision with growing importance.",
+                            "proficiencyLevels": [
+                                {
+                                    "name": "Level 1",
+                                    "description": "Can communicate effectively with team and customers"
+                                },
+                                {
+                                    "name": "Level 2",
+                                    "description": "Can handle complex communications and conflicts"
+                                },
+                                {
+                                    "name": "Level 3",
+                                    "description": "Can develop communication strategies and train others"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Sales Skills",
+                    "skills": [
+                        {
+                            "id": "sales-leadership",
+                            "name": "Sales Leadership",
+                            "shortDescription": "Leading retail sales efforts",
+                            "description": "Ability to lead and motivate sales teams to achieve targets and improve performance.",
+                            "marketTrends": "Sales leadership skills maintain high demand with focus on performance optimization.",
+                            "proficiencyLevels": [
+                                {
+                                    "name": "Level 1",
+                                    "description": "Can monitor sales performance and provide basic guidance"
+                                },
+                                {
+                                    "name": "Level 2",
+                                    "description": "Can develop sales strategies and coach team members"
+                                },
+                                {
+                                    "name": "Level 3",
+                                    "description": "Can implement comprehensive sales programs"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "merchandising",
+                            "name": "Merchandising",
+                            "shortDescription": "Managing product displays",
+                            "description": "Knowledge of merchandising principles and ability to maintain effective product displays.",
+                            "marketTrends": "Merchandising skills continue to evolve with emphasis on customer experience and visual appeal.",
+                            "proficiencyLevels": [
+                                {
+                                    "name": "Level 1",
+                                    "description": "Can maintain basic displays and follow planograms"
+                                },
+                                {
+                                    "name": "Level 2",
+                                    "description": "Can create effective displays and optimize layouts"
+                                },
+                                {
+                                    "name": "Level 3",
+                                    "description": "Can develop merchandising strategies and innovations"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+} 
