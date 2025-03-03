@@ -6,8 +6,9 @@ async function init() {
     try {
         console.log('Starting initialization...');
         
-        // Fetch CSV data from API endpoint
-        const response = await fetch('http://localhost:3000/api/skills');
+        // Fetch CSV data from GitHub raw file URL
+        // Replace <username> and <repo> with your actual GitHub information
+        const response = await fetch('https://raw.githubusercontent.com/<username>/<repo>/main/Copy%20of%20COMBINED%20Skill%20Profiles%20for%20Selected%20Roles%2012.02.2024.csv');
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -71,12 +72,14 @@ function parseCSV(csvText) {
     // Process each line
     for (let i = 1; i < lines.length; i++) {
         try {
-            // Split line by comma, but respect quotes
+            // Split line by quotes first to handle commas inside quotes properly
             const values = lines[i].split('"').map((item, index) => {
-                if (index % 2 === 0) { // not inside quotes
+                if (index % 2 === 0) { 
+                    // Not inside quotes: split by comma
                     return item.split(',').map(cleanValue).filter(Boolean);
                 }
-                return item; // inside quotes, keep as is
+                // Inside quotes: keep the quoted section as a single item
+                return item; 
             }).flat().filter(Boolean).map(cleanValue);
 
             if (values.length < 4) {
@@ -107,228 +110,4 @@ function parseCSV(csvText) {
                 continue;
             }
             
-            // Create occupation if it doesn't exist
-            if (!occupations[occupation]) {
-                occupations[occupation] = {
-                    name: occupation,
-                    categories: {}
-                };
-            }
-            
-            // Create category if it doesn't exist
-            if (!occupations[occupation].categories[category]) {
-                occupations[occupation].categories[category] = {
-                    name: category,
-                    description: `Skills related to ${category.toLowerCase()}`,
-                    skills: []
-                };
-            }
-            
-            // Add skill to category
-            occupations[occupation].categories[category].skills.push({
-                name: skill,
-                category: category,
-                subcategory: subcategory || 'General',
-                description: definition || 'No description available',
-                utilization: utilization || 'No utilization information available',
-                proficiencyLevel: proficiencyLevel || 'Not specified',
-                proficiencyLevels: [
-                    level1Example || 'No level 1 description available',
-                    level2Example || 'No level 2 description available',
-                    level3Example || 'No level 3 description available'
-                ],
-                marketTrends: {
-                    label: label || 'N/A',
-                    frequency: frequency || 'N/A',
-                    specificity: specificity || 'N/A',
-                    growthRate: growthRate || 'N/A',
-                    wagePremium: wagePremium || 'N/A'
-                }
-            });
-            
-        } catch (error) {
-            console.error(`Error processing line ${i}:`, error);
-        }
-    }
-    
-    return occupations;
-}
-
-// Populate occupation dropdown
-function populateOccupationDropdown(occupations) {
-    const select = document.getElementById('occupation');
-    select.innerHTML = '<option value="">Choose an occupation...</option>';
-    
-    Object.keys(occupations).sort().forEach(occupation => {
-        const option = document.createElement('option');
-        option.value = occupation;
-        option.textContent = occupation;
-        select.appendChild(option);
-    });
-}
-
-// Display skill categories for selected occupation
-function displaySkillCategories(occupation) {
-    const categoriesContainer = document.getElementById('skills-categories');
-    categoriesContainer.innerHTML = '';
-    
-    const categories = skillsData[occupation].categories;
-    
-    // Define category order
-    const categoryOrder = ['Core', 'Baseline', 'Foundational', 'Specializations'];
-    
-    // Create an array of categories and sort them by the predefined order
-    const sortedCategories = Object.entries(categories)
-        .map(([name, data]) => ({ name, ...data }))
-        .sort((a, b) => {
-            const indexA = categoryOrder.indexOf(a.name);
-            const indexB = categoryOrder.indexOf(b.name);
-            // If category is not in the predefined order, put it at the end
-            if (indexA === -1) return 1;
-            if (indexB === -1) return -1;
-            return indexA - indexB;
-        });
-    
-    sortedCategories.forEach(category => {
-        const categoryDiv = document.createElement('div');
-        categoryDiv.className = 'skill-category';
-        categoryDiv.setAttribute('data-category', category.name);
-        
-        const header = document.createElement('div');
-        header.className = 'category-header';
-        header.innerHTML = `
-            <h3>${category.name}</h3>
-            <span>${category.skills.length} skills</span>
-        `;
-        
-        const skillsList = document.createElement('div');
-        skillsList.className = 'skills-list';
-        
-        // Sort skills by name within each category
-        const sortedSkills = category.skills.sort((a, b) => a.name.localeCompare(b.name));
-        
-        sortedSkills.forEach(skill => {
-            const skillItem = document.createElement('div');
-            skillItem.className = 'skill-item';
-            skillItem.onclick = () => selectSkill(occupation, category.name, skill);
-            
-            // Get label type based on market trends
-            const labelType = getLabelType(skill.marketTrends);
-            
-            skillItem.innerHTML = `
-                <div class="skill-name-container">
-                    <span class="skill-name">${skill.name}</span>
-                    <span class="skill-label" data-type="${labelType || 'Stable Skill'}">${skill.marketTrends.label || 'Stable'}</span>
-                </div>
-            `;
-            
-            skillsList.appendChild(skillItem);
-        });
-        
-        categoryDiv.appendChild(header);
-        categoryDiv.appendChild(skillsList);
-        categoriesContainer.appendChild(categoryDiv);
-    });
-}
-
-// Helper function to determine label type
-function getLabelType(marketTrends) {
-    const label = marketTrends.label.toLowerCase();
-    if (label.includes('high growth')) return 'High Growth Skill';
-    if (label.includes('declining')) return 'Declining Skill';
-    if (label.includes('stable')) return 'Stable Skill';
-    if (label.includes('emerging')) return 'Emerging Skill';
-    return '';
-}
-
-// Display selected skill details
-function selectSkill(occupation, categoryName, skill) {
-    const detailsContainer = document.getElementById('skill-details');
-    const skillContent = detailsContainer.querySelector('.skill-content');
-    
-    // Update skill name and category
-    document.getElementById('selected-skill').innerHTML = `
-        <div class="skill-header">
-            <h2>${skill.name}</h2>
-            <div class="skill-meta">
-                <span class="category">${skill.category}</span>
-                <span class="proficiency">Proficiency: ${skill.proficiencyLevel}</span>
-            </div>
-        </div>
-    `;
-    
-    // Update market metrics
-    const wageValue = skill.marketTrends.wagePremium === '#N/A' || skill.marketTrends.wagePremium === 'N/A' 
-        ? 'Not Available' 
-        : skill.marketTrends.wagePremium;
-
-    document.getElementById('market-trends').innerHTML = `
-        <div class="market-metrics">
-            <div class="metrics-header">
-                <span class="metrics-title">Market Metrics</span>
-                ${skill.marketTrends.label ? `<span class="skill-label" data-type="${getLabelType(skill.marketTrends)}">${skill.marketTrends.label}</span>` : ''}
-            </div>
-            <div class="metric-row">
-                <div class="metric-item">
-                    <span class="metric-value">${skill.marketTrends.frequency}</span>
-                    <span class="metric-label">Frequency</span>
-                </div>
-                <div class="metric-item">
-                    <span class="metric-value">${skill.marketTrends.growthRate}</span>
-                    <span class="metric-label">Growth Rate</span>
-                </div>
-                <div class="metric-item">
-                    <span class="metric-value">${wageValue}</span>
-                    <span class="metric-label">Wage Premium</span>
-                </div>
-                <div class="metric-item">
-                    <span class="metric-value">${skill.marketTrends.specificity}</span>
-                    <span class="metric-label">Specificity</span>
-                </div>
-            </div>
-        </div>
-    `;
-    
-    // Update description and utilization
-    document.getElementById('skill-description').innerHTML = `
-        <div class="description-section">
-            <h4>Definition</h4>
-            <p>${skill.description}</p>
-        </div>
-        <div class="utilization-section">
-            <h4>How It's Used</h4>
-            <p>${skill.utilization}</p>
-        </div>
-    `;
-    
-    // Update proficiency levels with clear highlighting for recommended level
-    const proficiencyContainer = document.getElementById('proficiency-levels');
-    proficiencyContainer.innerHTML = `
-        <div class="proficiency-grid">
-            ${skill.proficiencyLevels.map((level, index) => {
-                const isRecommended = (index + 1).toString() === skill.proficiencyLevel;
-                return `
-                    <div class="proficiency-level ${isRecommended ? 'recommended' : ''}">
-                        <h4>Level ${index + 1}</h4>
-                        <p>${level}</p>
-                        ${isRecommended ? '<div class="recommended-outline"></div>' : ''}
-                    </div>
-                `;
-            }).join('')}
-        </div>
-    `;
-    
-    // Show the content
-    skillContent.classList.remove('hidden');
-    
-    // Update selected state
-    document.querySelectorAll('.skill-item').forEach(item => {
-        item.classList.remove('selected');
-        if (item.querySelector('.skill-name').textContent === skill.name) {
-            item.classList.add('selected');
-        }
-    });
-}
-
-// Start the application when the page loads
-document.addEventListener('DOMContentLoaded', init);
+            // Create occupati
